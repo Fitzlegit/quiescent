@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { addTimer } from '../actions/timerActions'
 
 class TimerInput extends Component {
   state = {
