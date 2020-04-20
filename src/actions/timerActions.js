@@ -1,6 +1,6 @@
-const NEW_TIMER = 'NEW_TIMER'
-const TOGGLE_TIMER = 'TOGGLE_TIMER'
-const SELECT_TIMER = 'SELECT_TIMER'
+export const NEW_TIMER = 'NEW_TIMER'
+export const TOGGLE_TIMER = 'TOGGLE_TIMER'
+export const SELECT_TIMER = 'SELECT_TIMER'
 
 
 
@@ -13,7 +13,7 @@ export const addTimer = (name) => {
 
 export const toggleTimer = (index) => {
   return {
-    type TOGGLE_TIMER,
+    type: TOGGLE_TIMER,
     payload: { index }
   }
 }
