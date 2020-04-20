@@ -1,10 +1,10 @@
 import React, { Component }  from 'react'
 
 class Timer extends Component {
-  state {
-    name: name,
-    time: 0,
-    isRunning = false
+  constructor(name) {
+    this.name = name;
+    this.time = 0;
+    this.isRunning = false;
   }
 }
 
