@@ -1,14 +1,5 @@
-import { SELECT_TIMER, NEW_TIMER, TOGGLE_TIMER } from '../actions'
-
-export default ( state = null, action) => {
-  switch(action.type) {
-    case SELECT_TIMER:
-     return state = action.payload.index;
-
-    default:
-      return state;
-  }
-}
+import { NEW_TIMER, TOGGLE_TIMER } from '../actions/timerActions'
+import Timer from '../components/Timer'
 
 export default (state = [], action) => {
   let index;
