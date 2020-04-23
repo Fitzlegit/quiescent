@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import './User.css'
+import { connect } from 'react-redux'
+import { fetchUser } from '../../actions/UserActions'
+
 
 class UserInput extends Component {
 
   state = {
-    username: '',
+    email: '',
     password: ''
   }
 
@@ -16,6 +19,7 @@ class UserInput extends Component {
 
   handleOnSubmit(event) {
     event.preventDefault()
+    this.props.fetchUser(this.state)
     this.setState({
       email: '',
       password: ''
@@ -25,6 +29,7 @@ class UserInput extends Component {
 
   render() {
     return (
+      <div className="login_container">
       <div className="centered">
         <form onSubmit={event => this.handleOnSubmit(event)}>
           <h3>EMAIL</h3>
@@ -47,9 +52,17 @@ class UserInput extends Component {
             <input type="Submit" value="Login/Register" />
         </form>
       </div>
+      </div>
     )
   }
 
 }
 
-export default UserInput;
+
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchUser: (user) => dispatch(fetchUser(user))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(UserInput);
