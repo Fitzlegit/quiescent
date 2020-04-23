@@ -5,3 +5,60 @@
   margin-top: -70px;
   margin-left: -125px;
 }
+
+/* .home {
+
+  background-color: black;
+  background-size: 75vh;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -125px;
+} */
+
+.home_shadow {
+-webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+-webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+}
+.home_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  height: 50vh;
+  width: 70vh;
+  background: black;
+  opacity: 75%;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 3px/6px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -35vh;
+  padding: 50px;
+
+}
+
+.login_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  height: 50vh;
+  width: 31vh;
+  background: black;
+  opacity: 75%;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 3px/6px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -170px;
+  padding: 50px;
+
+}
