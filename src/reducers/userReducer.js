@@ -1,17 +1,16 @@
-const userReducer = (state = {users: [], loading: false}, actions) => {
+const userReducer = (state = {current_user: {}}, action) => {
+  console.log('current user is...', state)
   switch(action.type) {
-    case 'LOADING_USERS':
-      return {
-        ...state,
-        users: [...state.users],
-        loading: true
-      }
-    case 'ADD_USERS'
-      return {
-        ...state,
-        users: action.users,
-        loading: false
-      }
+    case 'SET_USER':
+
+    console.log('Setting User...', action.user)
+
+    state = {current_user: action.user}
+
+    console.log('current_user', state.current_user.email)
+
+    return state
+    
       default:
         return state;
   }
