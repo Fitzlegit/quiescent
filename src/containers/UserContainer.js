@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import * as comp from '../components/user'
+
+
 class UserContainer extends Component {
 
   componentDidMount() {
@@ -11,7 +13,7 @@ class UserContainer extends Component {
     console.log(this.props)
     return (
       <div>
-        // {this.props.current_user.id === undefined ? <comp.UserInput/> : <comp.UserHome current_user={this.props.current_user} /> }
+        {this.props.current_user.id === undefined ? <comp.UserInput/> : <comp.UserHome current_user={this.props.current_user} /> }
         <comp.UserHome current_user={this.props.current_user} />
       </div>
 
