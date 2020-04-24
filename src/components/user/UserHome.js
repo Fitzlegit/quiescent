@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './User.css'
+import TimerContainer from '../../containers/TimerContainer'
 
 class UserHome extends Component {
 
@@ -8,7 +9,7 @@ class UserHome extends Component {
     return (
       <div className='home_shadow'>
         <div className="home_container">
-        This is our homepage {this.props.current_user.email}
+          <TimerContainer />
         </div>
       </div>
 
