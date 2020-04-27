@@ -5,7 +5,18 @@
   min-height: 100%;
   background-position: center;
   background-size: cover;
+  margin-top: 0px;
 }
+
+.Nav-button {
+  color: blue;
+  padding-right: 15px;
+}
+
+a {
+  color: white;
+}
+
 
 body, html {
   height: 100%;
