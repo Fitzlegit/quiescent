@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './User.css'
 import { connect } from 'react-redux'
 import { fetchUser } from '../../actions/UserActions'
+import lotus from '../../img/lotus.svg'
 
 
 class UserInput extends Component {
@@ -30,6 +31,8 @@ class UserInput extends Component {
   render() {
     return (
       <div className="login_container">
+        <img className='logo' src={lotus} alt="lotus" />
+        <a className='logo-text'>Quiescent</a>
       <div className="centered">
         <form onSubmit={event => this.handleOnSubmit(event)}>
           <h3>EMAIL</h3>
@@ -49,7 +52,7 @@ class UserInput extends Component {
               onChange={event => this.handleOnChange(event)}
               />
               <p/>
-            <input type="Submit" value="Login/Register" />
+            <input type="Submit" value="Login/Register" id='submit' />
         </form>
       </div>
       </div>

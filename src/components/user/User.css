@@ -1,9 +1,46 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Montserrat+Subrayada:wght@400;700&display=swap);
+
+#submit {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  margin-top: 5vh;
+}
+
+h3 {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  height: 100px;
+}
+
+.logo-text {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 4px;
+  font-size: 15px;
+  position: absolute;
+  top: 11%;
+  left: 45%;
+}
+
+
 .centered {
-  position: fixed;
-  top: 40%;
-  left: 50%;
+  position: absolute;
+  top: 45%;
+  left: 52%;
   margin-top: -70px;
-  margin-left: -125px;
+  margin-left: -9.5vh;
 }
 
 /* .home {
@@ -50,7 +87,7 @@
   height: 50vh;
   width: 31vh;
   background: black;
-  opacity: 1%;
+  opacity: 75%;
   box-shadow: 1px 1px 2px #fff inset,
               -1px -1px 2px #fff inset;
   border-radius: 3px/6px;
