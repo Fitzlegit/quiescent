@@ -11,7 +11,7 @@ class TimerInput extends Component {
 
   handleOnChange(event) {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value.slice(0, 2)
     })
   }
 
@@ -36,17 +36,23 @@ class TimerInput extends Component {
           })
         }
 
-        if(minutes < 10 & seconds == '00' & minutes > 0 ){
+        if(minutes < 11 & seconds === '00' & minutes > 0 ){
           this.setState({
             minutes: '0' + (minutes - 1),
             seconds: 59
           })
-        } else if(minutes > 10  & seconds == '00') {
+        } else if(minutes > 10  & seconds === '00') {
           this.setState({
             minutes: minutes - 1,
             seconds: 59
           })
         }
+
+        // if (minutes == '' ) {
+        //   this.setState({
+        //     minutes: '00'
+        //   })
+        // }
 
         if (seconds === '00') {
           if (minutes === '00') {
@@ -85,6 +91,7 @@ class TimerInput extends Component {
                 name='minutes'
                 id='minutes'
                 value={this.state.minutes}
+                maxlength='2'
                 min='00'
                 max='60'
                 onChange={event => this.handleOnChange(event)}
@@ -95,13 +102,14 @@ class TimerInput extends Component {
                 name='seconds'
                 id='seconds'
                 value={this.state.seconds}
+                maxlength='2'
                 min='00'
                 max='60'
                 onChange={event => this.handleOnChange(event)}
                 />
                 <br/>
-                <button onClick={event => this.startTimer(event)}>Start</button>
-                <button onClick={event => this.stopTimer(event)}>Pause</button>
+                <button className='my-button' onClick={event => this.startTimer(event)}>Start</button>
+                <button className='my-button' onClick={event => this.stopTimer(event)}>Pause</button>
               </div>
         </div>
     )
