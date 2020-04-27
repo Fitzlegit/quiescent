@@ -1,0 +1,18 @@
+#textarea {
+  height: 15vh;
+  word-wrap: break-word;
+  width: 56vh;
+  margin-bottom: -50px;
+  margin-top: 15px;
+  word-wrap: break-word;
+  white-space: normal;
+  border-radius: 4px;
+  color: white;
+}
+
+#text {
+  float: right;
+  margin-left: 0vh;
+  width: 14vh;
+  border-radius: 4px;
+}
