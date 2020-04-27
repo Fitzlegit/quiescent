@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Montserrat+Subrayada:wght@400;700&display=swap);
 
 input[type=number] {
-  width: 18%;
+  width: 15%;
   height: 70px;
   background: transparent;
   border-color: transparent;
@@ -12,13 +12,13 @@ input[type=number] {
 }
 
 .container {
-  margin-top: 150px;
+  margin-top: 10px;
   padding: 15px;
 }
 
 #minutes {
 display: inline-block;
-margin-left: 15px;
+margin-left: ;
 }
 
 #seconds {
@@ -28,13 +28,14 @@ margin-left: 15px;
 span {
   font-size: 75px;
   font-family: 'Anton', sans-serif;
-  padding-right: 15px;
+  padding-right: 13px;
+  padding-left: 8px;
 }
 
 
-button {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 24px;
+.my-button {
+  font-family: 'Montserrat Subrayad', sans-serif;
+  font-size: 20px;
   font-weight: 700;
   margin: 8px;
   border: none;
