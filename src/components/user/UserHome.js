@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './User.css'
 import TimerContainer from '../../containers/TimerContainer'
-import ProfileContainer from '../../containers/ProfileContainer'
+import QuoteContainer from '../../containers/QuoteContainer'
 
 class UserHome extends Component {
 
@@ -10,7 +10,7 @@ class UserHome extends Component {
     return (
       <div className='home_shadow'>
         <div className="home_container">
-          <ProfileContainer />
+          <QuoteContainer />
           <TimerContainer />
         </div>
       </div>
