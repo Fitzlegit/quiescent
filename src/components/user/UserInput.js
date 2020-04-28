@@ -40,6 +40,7 @@ class UserInput extends Component {
             type="email"
             value={this.state.email}
             name='email'
+            required
             onChange={event => this.handleOnChange(event)}
             />
             <br/>
@@ -49,6 +50,7 @@ class UserInput extends Component {
               type="password"
               value={this.state.password}
               name='password'
+              required
               onChange={event => this.handleOnChange(event)}
               />
               <p/>

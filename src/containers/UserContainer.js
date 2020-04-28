@@ -18,7 +18,7 @@ class UserContainer extends Component {
 
 const mapStateToProps = state => {
   return {
-    current_user: state.current_user,
+    current_user: state.user.current_user,
   }
 }
 
