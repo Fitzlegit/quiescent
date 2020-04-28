@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App w3-display-container w3-animate-opacity w3-text-white">
       <comp.Navigation />
+      <comp.Footer />
     </div>
   );
 }
