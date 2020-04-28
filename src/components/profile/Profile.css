@@ -1,18 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Montserrat+Subrayada:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
+
 #textarea {
-  height: 15vh;
+  height: 25vh;
   word-wrap: break-word;
-  width: 56vh;
-  margin-bottom: -50px;
-  margin-top: 15px;
+  width: 60vh;
+  margin-bottom: 0px;
+  margin-top: 5vh;
   word-wrap: break-word;
   white-space: normal;
   border-radius: 4px;
   color: white;
 }
 
-#text {
-  float: right;
+#fullname {
   margin-left: 0vh;
   width: 14vh;
+  margin-bottom: 5vh;
   border-radius: 4px;
+}
+
+.submit-btn {
+  float: right;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.profile_shadow {
+-webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+-webkit-box-shadow: rgba(0, 0, 0, .30) 0 2px 3px;
+}
+.profile_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  height: 50vh;
+  width: 70vh;
+  background: black;
+  opacity: 75%;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 3px/6px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -35vh;
+  padding: 50px;
+
+}
+
+.why-header {
+  font-size: 30px;
+  opacity: 35%;
+  letter-spacing: 5px;
+  padding: 10px;
+}
+
+.why-text {
+  letter-spacing: 1px;
+  font-family: 'Courgette', sans-serif;
+  margin-top: 15px;
+  font-weight: 200;
 }
