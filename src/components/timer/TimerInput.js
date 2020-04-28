@@ -48,11 +48,6 @@ class TimerInput extends Component {
           })
         }
 
-        // if (minutes == '' ) {
-        //   this.setState({
-        //     minutes: '00'
-        //   })
-        // }
 
         if (seconds === '00') {
           if (minutes === '00') {
