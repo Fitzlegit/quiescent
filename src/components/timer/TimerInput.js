@@ -91,7 +91,7 @@ class TimerInput extends Component {
                 name='minutes'
                 id='minutes'
                 value={this.state.minutes}
-                maxlength='2'
+                maxLength='2'
                 min='00'
                 max='60'
                 onChange={event => this.handleOnChange(event)}
@@ -102,7 +102,7 @@ class TimerInput extends Component {
                 name='seconds'
                 id='seconds'
                 value={this.state.seconds}
-                maxlength='2'
+                maxLength='2'
                 min='00'
                 max='60'
                 onChange={event => this.handleOnChange(event)}
