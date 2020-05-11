@@ -6,7 +6,8 @@ class TimerInput extends Component {
   state = {
     minutes: '02',
     seconds: '00',
-    isRunning: false
+    isRunning: false,
+    likes: 0
   }
 
   handleOnChange(event) {
@@ -66,11 +67,28 @@ class TimerInput extends Component {
       this.setState({
         isRunning: false
       })
+
     }
     clearInterval(this.timer)
   }
 
   resetTimer(){
+
+  }
+
+  likes ()  {
+    console.log('a')
+          fetch('http://127.0.0.1:3000/users')
+            .then(res => {
+              console.log('b')
+              return res.json()
+          })
+            .then(resJSON => { console.log('c', resJSON)  })
+            .catch(err => console.log('d'))
+            console.log('e')
+
+            // a b c + json e d
+
 
   }
 
